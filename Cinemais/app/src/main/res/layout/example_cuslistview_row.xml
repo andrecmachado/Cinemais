@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idPic"
+        android:src="@drawable/activity_intent"/-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idPic" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTitle"
+        android:text="Title"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/idPic" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idDescription"
+        android:text="Description Comes Here"
+        android:layout_below="@id/idTitle"
+        android:layout_toRightOf="@id/idPic"/>
+    <!--Button
+        android:text="Trailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginStart="200dp"
+        android:id="@+id/buttonTeste" /-->
+</RelativeLayout>

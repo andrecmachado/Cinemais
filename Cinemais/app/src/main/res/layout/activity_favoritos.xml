@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CineEspacoActivity"
+    android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_weight="0.90"
+        android:id="@+id/Layout1">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ListViewFavoritos" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Layout2"
+        android:weightSum="1">
+
+        <Button
+            android:text="Remover"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:onClick="remover"
+            android:id="@+id/btnExcluir" />
+
+        <Button
+            android:text="Buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buscar"
+            android:id="@+id/btnBuscar" />
+
+    </LinearLayout>
+</LinearLayout>

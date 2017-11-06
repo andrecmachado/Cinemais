@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CineEspacoActivity"
+    android:weightSum="1"
+    android:id="@+id/Layout">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_weight="0.90"
+        android:id="@+id/Layout1">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ListaCinemas" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Layout2">
+
+        <Button
+            android:text="Localização"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:onClick="abrirTelaMaps"
+            android:id="@+id/btnMap"
+            android:layout_weight="0.95" />
+
+        <Button
+            android:text="Favoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="abreTelaFavoritos"
+            android:id="@+id/btnFav"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>
